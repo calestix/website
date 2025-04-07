@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Gabriela&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@mixin volkhov-regular {
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin volkhov-bold {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin volkhov-regular-italic {
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin volkhov-bold-italic {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+@mixin noto-sans {
+  font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+}
+@mixin gabriela-regular {
+  font-family: "Gabriela", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin agbalumo-regular {
+  font-family: "Agbalumo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+h1{
+  @include gabriela-regular;
+  font-weight: 400;
+  span{
+    @include agbalumo-regular;
+  }
+}
+
+p,span,li{
+  @include noto-sans;
+
+}
+h2,h3,h4,h5,h6{
+  @include volkhov-bold;
+}

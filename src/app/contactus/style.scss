@@ -1,0 +1,94 @@
+.contactus {
+  background: url("../../assests/contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 60px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  .contact-container {
+    padding: 40px;
+    border-radius: 12px;
+    width: 500px;
+    color: white;
+    text-align: center;
+    background-color: #222;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #bbb;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        input,
+        select,
+        textarea {
+          width: 100%;
+          padding: 12px;
+          border-radius: 8px;
+          border: 1px solid #444;
+          background: #333;
+          color: white;
+          font-size: 14px;
+          transition: 0.3s ease;
+
+          &:focus {
+            border-color: #ffcc00;
+            outline: none;
+            box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+          }
+        }
+
+        select {
+          cursor: pointer;
+        }
+
+        .error {
+          color: #ff4444;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+      }
+
+      .submit-btn {
+        background: #ffcc00;
+        color: #222;
+        font-weight: bold;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 16px;
+
+        &:hover {
+          background: #e6b800;
+          box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.5);
+        }
+
+        &:disabled {
+          background: #888;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
