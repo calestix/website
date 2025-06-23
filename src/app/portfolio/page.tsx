@@ -32,7 +32,7 @@ export default function Portfolio() {
                     <div className="backdrop-blur-md bg-white/10 p-10 rounded-2xl border border-white/20 shadow-xl">
                         <h1 className="text-5xl font-bold text-center mb-10">Our Portfolio</h1>
                         <p className="text-center text-gray-300 text-lg mb-12 max-w-3xl mx-auto">
-                            From full-stack platforms to static websites, here's a showcase of some of our proudest works that reflect our quality, performance, and creativity.
+                            From full-stack platforms to static websites, here&apos;s a showcase of some of our proudest works that reflect our quality, performance, and creativity.
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-10">
@@ -70,7 +70,7 @@ export default function Portfolio() {
                         <div className="text-center mt-16">
                             <h3 className="text-2xl font-bold text-white mb-2">Want to see more?</h3>
                             <p className="text-gray-400 mb-4">
-                                We're constantly working on new ideas. Contact us to build your next dream project!
+                                We&apos;re constantly working on new ideas. Contact us to build your next dream project!
                             </p>
                             <Link
                                 href="/contactus"
