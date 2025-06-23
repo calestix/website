@@ -1,6 +1,9 @@
 .aboutus{
     height: 100vh;
     padding: 70px 60px;
+    @media(max-width:1024px){
+        height: 100%;
+    }
     p{
         font-size: 18px;
         color: white;
