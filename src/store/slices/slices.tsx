@@ -9,13 +9,13 @@ export const objectSlice = createSlice({
   initialState,
   reducers: {
     setObject: (state, action) => {
-      state.data = action.payload; // Stores any object dynamically
+      state.data = action.payload; 
     },
     updateObject: (state, action) => {
-      state.data = { ...state.data, ...action.payload }; // Merges updates into the object
+      state.data = { ...state.data, ...action.payload };
     },
     clearObject: (state) => {
-      state.data = {}; // Resets the object
+      state.data = {};
     },
   },
 });

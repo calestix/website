@@ -40,14 +40,14 @@ export const Header = () => {
     const data = [
         { title: "Home", link: "/" },
         { title: "Services", link: "/services" },
-        { title: "Industries", link: "/industries" },
-        { title: "Product", link: "/product" },
+        { title: "About Us", link: "/aboutus" },
+        { title: "Portfolio", link: "/portfolio" },
         { title: "Contact Us", link: "/contactus" }
     ];
 
     return (
         <section className={`header ${isScrolled ? "scrolled" : ""}`}>
-            <div className="logo">
+            <div className="logo" onClick={()=>navigate.push("/")}>
                 <Image src={logo1} alt="img" className="headerlogo" />
             </div>
             <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>

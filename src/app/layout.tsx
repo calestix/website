@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import '@/app/app.scss'
 import Providers from "@/store/provider";
+import CustomWhatsAppWidget from "../component/whatsapp";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +31,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        
         <Providers>
         {children}
         </Providers>
+                <CustomWhatsAppWidget/>
+
+
       </body>
     </html>
   );
