@@ -1,7 +1,6 @@
 // pages/services.tsx
 
 import { Header } from "@/component/header/header";
-import Image from "next/image";
 import Link from "next/link";
 import { FaCode, FaMobileAlt, FaPaintBrush, FaCloud, FaRobot, FaStore, FaLock, FaChartLine } from "react-icons/fa";
 
